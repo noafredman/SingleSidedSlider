@@ -103,7 +103,7 @@ public class SSSlider: UIView {
                 leadingConstraint_sliderDraggedViewLabel.priority = .defaultLow
                 sliderDraggedViewTextLabel.setAnchor(anchor: .leading,
                                                      constant: 10,
-                toView: sliderLeftImageView,
+                                                     toView: sliderLeftImageView,
                                                      toAnchor: .trailing)
                 
                 
@@ -113,7 +113,7 @@ public class SSSlider: UIView {
                 sliderRightImageView.isHidden = false
                 sliderDraggedViewTextLabel.setAnchor(anchor: .trailing,
                                                      constant: -1,
-                toView: sliderRightImageView,
+                                                     toView: sliderRightImageView,
                                                      toAnchor: .leading)
                 sliderRightImageView.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
             case .none:
